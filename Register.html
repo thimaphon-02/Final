@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="images/logo1.png"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <span class="fs-4">Final</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="Home.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="Course.html" class="nav-link">Course</a></li>
+                <li class="nav-item"><a href="Register.html" class="nav-link active" aria-current="page">Register</a>
+                </li>
+            </ul>
+        </header>
+    </div>
+</body>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto mt-5 bg-light rounded">
+            <div class="h3 text-center text-primary mt-3">Register</div>
+
+            <form id="registerForm">
+                <div class="mb-3 mt-4">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="firstname-lastname" placeholder="firstname - lastname">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Phon Number</label>
+                    <input type="text" class="form-control" id="Phon" placeholder="061-*******">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Select Course</label>
+                <select class="form-select" id="Course" required=""> 
+                    <option value="">เลือกคอร์ส</option> <option>Course c1</option>  <option>Course c2</option>   <option>Course c3</option>           
+                </select>
+                </div>
+                <div class="text-left mb-4">
+                    <input type="submit" id="submit" class="btn btn-primary me-2" value="Submit">
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top text-center">
+    <p>© 2026 onlineCourse. All rights reserved By 69709361_Thimaphon.</p>
+</div>
+
+<script>
+    document.getElementById("registerForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+
+        window.location.href = "Hom.html";
+    });
+</script>
+</body>
+</form>
+
+</div>
+</div>
+</div>
+
+<script>
+    document.getElementById("registerForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+
+        window.location.href = "index.html";
+    });
+</script>
+</body>
+
+</html>
